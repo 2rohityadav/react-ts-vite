@@ -1,0 +1,147 @@
+@media (max-width: 500px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  #line {
+    width: 80%;
+    margin: 50px auto;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media (min-width: 500px) {
+
+  #line {
+    width: 80%;
+    margin: 50px auto;
+    border-bottom: 1px solid white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #000;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#title {
+  letter-spacing: 5px;
+}
+
+#subtext {
+  color: #000000e0;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+#instruction {
+  color: #000000db;
+  letter-spacing: 5px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#react-logo {
+  background: url('https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: rotate 5s linear infinite;
+  height: 200px;
+  width: 200px;
+  margin: 15px auto;
+}
+
+#information {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link {
+  color: #fdcb6e;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 2px;
+}
+
+.link:hover {
+  color: #55efc4;
+}
+
+#footer {
+  color: #fdcb6e;
+  margin-top: 50px;
+}
+
+button {
+ position: relative;
+ font-size: 17px;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 1em 2.5em;
+ display: inline-block;
+ border-radius: 6em;
+ transition: all .2s;
+ border: none;
+ font-family: inherit;
+ font-weight: 500;
+ color: black;
+ background-color: white;
+ cursor: pointer;
+}
+
+button:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ transition: all .4s;
+}
+
+button::after {
+ background-color: #fff;
+}
+
+button:hover::after {
+ transform: scaleX(1.4) scaleY(1.6);
+ opacity: 0;
+}
