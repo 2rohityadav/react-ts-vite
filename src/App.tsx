@@ -12,12 +12,15 @@ export const App = () => {
         Starting a React project made easier with zero-configuration
         boilerplate.
       </h2>
-      <span id="line" />
+
+      <span id="line">{process.env.VITE_TEST}</span>
       <div id="instruction">
         <p>Edit src/App.tsx to start</p>
         <p>Edit src/App.css to change styles</p>
       </div>
+
       <div id="react-logo" />
+
       <div>
         <button type="button" onClick={increment}>
           count is: {count}
