@@ -25,5 +25,5 @@
     "noImplicitThis": true,
     "strictNullChecks": true
   },
-  "include": ["src", "jest.setup.ts", "vite.config.ts"]
+  "include": ["src", "jest.setup.ts", "vite.config.ts", "jest.config.cjs"]
 }

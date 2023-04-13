@@ -1,5 +1,6 @@
 module.exports = {
   env: {
+    'jest/globals': true,
     browser: true,
     es2021: true,
   },
@@ -17,7 +18,7 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'jest'],
   settings: {
     'import/resolver': {
       node: {
