@@ -18,7 +18,7 @@ This is a very simple react, typescript, & vite boilerplate with (almost) zero c
 - Vite
 - Jest
 - React Testing Libraries
-- .evn
+- .env
 
 ## LICENSE
 
